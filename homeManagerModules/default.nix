@@ -24,9 +24,9 @@ in
         Type = "simple";
         ExecStart = mkExecStart configFile;
         Restart = "always";
-        Environment = lib.concatStringsSep "\n" [
-                  (lib.optionalString cfg.debug "RUST_LOG=debug")
-                  (lib.optionalString cfg.withWlroots "WAYLAND_DISPLAY=wayland-1")
+        Environment = lib.concatStringsSep " " [
+                  (lib.optionalString cfg.debug "\"RUST_LOG=debug\"")
+                  (lib.optionalString cfg.withWlroots "\"WAYLAND_DISPLAY=wayland-1\"")
         ];
       };
       Install.WantedBy = [ "graphical-session.target" ];
