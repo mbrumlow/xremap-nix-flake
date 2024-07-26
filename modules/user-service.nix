@@ -43,7 +43,9 @@ in
         LockPersonality = true;
         UMask = "077";
         RestrictAddressFamilies = "AF_UNIX";
-        Environment = optionalString cfg.debug "RUST_LOG=debug";
+        Environment = lib.concatStringsSep "\n" [
+                  (lib.optionalString cfg.debug "RUST_LOG=debug")
+                  (lib.optionalString cfg.withWlroots "WAYLAND_DISPLAY=wayland-1") # hack to maybe work?
         ExecStart = mkExecStart configFile;
       };
     };
