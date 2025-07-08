@@ -437,16 +437,16 @@
     "xremap": {
       "flake": false,
       "locked": {
-        "lastModified": 1751937361,
-        "narHash": "sha256-CPkorrLf1rqw6UKUqZatcNJcqL22KLVqNKjAaR5epoc=",
+        "lastModified": 1751939027,
+        "narHash": "sha256-At+jDFsGJ78kHuyeWxsN1nF7htjmoLzWFx0k4ztKBIU=",
         "owner": "mbrumlow",
         "repo": "xremap",
-        "rev": "194a47142a10a9ca6a54206b35b5ae01c3a35212",
+        "rev": "19cc26ec3c09978069f4b574f81c54ecbaf0909c",
         "type": "github"
       },
       "original": {
         "owner": "mbrumlow",
-        "ref": "feature/add-symlink-creation2",
+        "ref": "feature/add-symlink-creation-user",
         "repo": "xremap",
         "type": "github"
       }
