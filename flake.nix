@@ -21,6 +21,7 @@
     #   inputs.nixpkgs.follows = "nixpkgs";
     #   inputs.rust-analyzer-src.follows = "";
     # };
+    
     # advisory-db = {
     #   url = "github:rustsec/advisory-db";
     #   flake = false;
