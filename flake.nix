@@ -29,7 +29,7 @@
 
     # The Rust source for xremap
     xremap = {
-      url = "github:mbrumlow/xremap?ref=feature/add-symlink-creation";
+      url = "github:mbrumlow/xremap?ref=feature/add-symlink-creation2";
       flake = false;
     };
     hyprland = {
